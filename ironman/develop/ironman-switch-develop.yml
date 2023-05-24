@@ -2,4 +2,4 @@ transfer:
   asset:
     enable: false
   friend:
-    enable: false
+    enable: true
