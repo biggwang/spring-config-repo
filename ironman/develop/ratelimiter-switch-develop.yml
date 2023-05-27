@@ -3,7 +3,7 @@ default:
   limitRefreshPeriod: 10s
   timeoutDuration: 1s
 transfer-limit:
-  limitForPeriod: 5
+  limitForPeriod: 4
   limitRefreshPeriod: 10s
   timeoutDuration: 1s
 banks:
