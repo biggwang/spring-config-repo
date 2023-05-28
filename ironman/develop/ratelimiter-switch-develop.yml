@@ -1,16 +1,18 @@
-#rate-limiter:
-default:
-  registerHealthIndicator: false
-  limitForPeriod: 5
-  limitRefreshPeriod: 10s
-  timeoutDuration: 1s
-transfer-limit:
-  registerHealthIndicator: false
-  limitForPeriod: 7
-  limitRefreshPeriod: 10s
-  timeoutDuration: 1s
-banks:
-  registerHealthIndicator: false
-  limitForPeriod: 7
-  limitRefreshPeriod: 10s
-  timeoutDuration: 1s
+rate-limiter:
+  enable: true
+  targets:
+    - name: default
+      enable: true
+      limitForPeriod: 5
+      limitRefreshPeriod: 10s
+      timeoutDuration: 1s
+    - name: transfer-limit
+      enable: true
+      limitForPeriod: 3
+      limitRefreshPeriod: 10s
+      timeoutDuration: 1s
+    - name: banks
+      enable: true
+      limitForPeriod: 7
+      limitRefreshPeriod: 10s
+      timeoutDuration: 1s
