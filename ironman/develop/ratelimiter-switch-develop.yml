@@ -8,7 +8,7 @@ rate-limiter:
       timeoutDuration: 1s
     - name: transfer-limit
       enable: true
-      limitForPeriod: 3
+      limitForPeriod: 6
       limitRefreshPeriod: 10s
       timeoutDuration: 1s
     - name: banks
